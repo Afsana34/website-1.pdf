@@ -15,6 +15,7 @@ header{
     padding-left: 50px;
     padding-right: 20px;
     margin-top: 50px;
+    width: 100%;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -95,5 +96,42 @@ ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
    
+}
+/*Media Queries*/
+/*Mobile Device*/
+
+@media screen and (max-width:576px) {
+    .first-header{
+        flex-direction: column;
+        grid-template-columns: repeat(1,fr);
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(1, fr);
+        flex-direction: column;
+    }
+    .box{
+        grid-template-columns: repeat(1, fr);
+    }
+
+    
+}
+
+/*Tablet Device*/
+@media screen and (min-width:577px) and (max-width:992){
+    .first-header{
+        flex-direction: column;
+        grid-template-columns: repeat(2,fr);
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(2, fr);
+        flex-direction: column;
+
+    }
+    .box{
+        grid-template-columns: repeat(2, fr);
+    }
+    
 }
 
