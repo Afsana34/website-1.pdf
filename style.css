@@ -21,3 +21,42 @@ img{
     margin-top: 50px;
     height: 450px;
 }
+
+/*style the container*/
+.container{
+    display: flex;
+    
+
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+#box-1{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    row-gap: 10px;
+    border-radius: 7px;
+    width: 200px;
+    height: 100px;
+    
+}
+#box-2{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 3 1fr;
+    
+}
+.player{
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+.player img{
+    width: 75%;
+}
+.fa-solid{
+    color: black;
+}
+
