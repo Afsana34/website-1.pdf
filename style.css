@@ -168,12 +168,40 @@ section{
     .box{
         grid-template-columns: repeat(1, fr);
     }
+    section{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+    }
+    .header-one{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+    }
+    .date{
+        display: grid;
+        grid-template-columns: repeat(1,fr);
+    }
+    .new-flag{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        flex-direction: column;
+    }
 
     
 }
 
 /*Tablet Device*/
 @media screen and (min-width:577px) and (max-width:992){
+
+    .first-header{
+        flex-direction: column;
+        grid-template-columns: repeat(1,fr);
+        width: 100%;
+        height: 100%;
+    }
     
     .container{
         grid-template-columns: repeat(2, fr);
@@ -183,5 +211,10 @@ section{
     .box{
         grid-template-columns: repeat(2, fr);
     }
+    .new-flag{
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+    }
+
     
 }
